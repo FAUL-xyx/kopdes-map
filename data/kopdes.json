@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Kopdes Merah Putih Kesugihan",
+    "province": "Jawa Tengah",
+    "regency": "Cilacap",
+    "district": "Kesugihan",
+    "village": "Desa Kesugihan",
+    "latitude": -7.6322,
+    "longitude": 109.1171,
+    "address": "Jl. Raya Kesugihan, Kecamatan Kesugihan, Kabupaten Cilacap",
+    "phone": "081234567890",
+    "description": "DATA DEMO"
+  },
+  {
+    "id": 2,
+    "name": "Kopdes Merah Putih Maos",
+    "province": "Jawa Tengah",
+    "regency": "Cilacap",
+    "district": "Maos",
+    "village": "Desa Maos Lor",
+    "latitude": -7.6150,
+    "longitude": 109.1415,
+    "address": "Jl. Raya Maos, Kecamatan Maos, Kabupaten Cilacap",
+    "phone": "081234567891",
+    "description": "DATA DEMO"
+  },
+  {
+    "id": 3,
+    "name": "Kopdes Merah Putih Kroya",
+    "province": "Jawa Tengah",
+    "regency": "Cilacap",
+    "district": "Kroya",
+    "village": "Desa Kroya",
+    "latitude": -7.6258,
+    "longitude": 109.2482,
+    "address": "Jl. Jenderal Sudirman, Kecamatan Kroya, Kabupaten Cilacap",
+    "phone": "081234567892",
+    "description": "DATA DEMO"
+  }
+]
+
