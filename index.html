@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kopdes Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Pencarian -->
+    <header class="app-header">
+        <h1>KOPDES MAP</h1>
+        <div class="search-filter-bar">
+            <input type="text" id="search-input" placeholder="Cari Kopdes, desa, kecamatan...">
+            <select id="distance-filter">
+                <option value="all">Semua Jarak</option>
+                <option value="1">Terdekat (< 1 km)</option>
+                <option value="5">< 5 km</option>
+                <option value="10">< 10 km</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Kontainer Peta -->
+    <main class="map-container">
+        <div id="map"></div>
+        
+        <!-- Status & Kontrol Floating -->
+        <div class="floating-controls">
+            <div id="location-status" class="status-badge status-waiting">
+                🟡 Menunggu lokasi...
+            </div>
+            <button id="btn-my-location" class="fab-btn" title="Lokasi Saya">📍</button>
+        </div>
+    </main>
+
+    <!-- Panel Bawah (Bottom Sheet) -->
+    <div class="bottom-sheet">
+        <div class="sheet-header">
+            <h3>Kopdes Terdekat</h3>
+            <small id="manual-location-hint">Klik peta untuk atur lokasi manual</small>
+        </div>
+        <div id="kopdes-list" class="list-container">
+            <!-- Item akan di-generate via JavaScript -->
+            <div class="loading-text">Memuat data Kopdes...</div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
